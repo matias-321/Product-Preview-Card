@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-cream p-6">
+    <div
+      class="rounded-md bg-white sm:w-[25rem] md:w-[42rem] md:flex shadow-darkBlue-500/40"
+    >
+      <div
+        class="h-[15.376rem] md:flex-1 md:h-auto bg-mobile-image bg-cover bg-center rounded-t-md md:bg-destktop-image md:rounded-bl-md md:rounded-tr-none"
+        role="img"
+        aria-label="Image"
+      ></div>
+
+      <div class="p-8 flex-1">
+        <span
+          class="uppercase text-grayishBlue font-Montserrat tracking-[.2rem] text-sm block mb-3"
+          >Perfume</span
+        >
+        <h1
+          class="text-[2.8rem] leading-[1.05] font-Fraunces text-darkBlue mb-3"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p class="text-base font-Montserrat mb-6 text-grayishBlue">
+          CVA floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex gap-5 text-grayishBlue mb-5">
+          <span class="text-3xl font-Fraunces text-mainColor">$149.99</span>
+          <span class="text-base font-Montserrat line-through">$169.99</span>
+        </div>
+        <div
+          class="bg-mainColor flex items-center justify-center py-4 rounded-lg gap-4 cursor-pointer"
+        >
+          <img src="./images/icon-cart.svg" class="w-5" alt="Icon" />
+          <a href="#" class="text-xl text-white font-Montserrat font-medium"
+            >Add to Cart</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
